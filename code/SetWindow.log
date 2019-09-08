@@ -1,0 +1,12 @@
+行 16: 控件 StyleCheck 的类 VB.Option 不是一个已加载的控件类。
+行 37: 控件 StyleCheck 的类 VB.Option 不是一个已加载的控件类。
+行 59: 控件 UpdateOption 的类 VB.Option 不是一个已加载的控件类。
+行 80: 控件 UpdateOption 的类 VB.Option 不是一个已加载的控件类。
+行 102: 控件 UpdateOption 的类 VB.Option 不是一个已加载的控件类。
+行 19: 属性名 Caption 在 StyleCheck 中是无效的。
+行 40: 属性名 Caption 在 StyleCheck 中是无效的。
+行 56: 属性名 Value 在 StyleCheck 中是无效的。
+行 62: 属性名 Caption 在 UpdateOption 中是无效的。
+行 83: 属性名 Caption 在 UpdateOption 中是无效的。
+行 99: 属性名 Value 在 UpdateOption 中是无效的。
+行 105: 属性名 Caption 在 UpdateOption 中是无效的。

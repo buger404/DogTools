@@ -1,0 +1,197 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Language" content="zh-cn">
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>Dog Tools - Welcome</title>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<style>
+
+@font-face {
+  font-family: Selawik; 
+  src: url('font.ttf');
+}
+
+body{ text-align:center;font-family:"Selawik";} 
+
+.centerdiv { width: 100%; margin-left: auto; margin-right: auto; }
+
+.span { 
+  color:rgb(27,27,27);
+  transition: all 0.5s;
+  text-align: left;
+  font-size: 16px;
+  padding: 15px;
+}
+
+.span:hover { 
+  color:rgb(106,215,235);
+  transition: 0.5s;
+}
+
+.bottomdiv { 
+  width: 100%; 
+  height: 110px;
+  margin-left: auto; 
+  margin-right: auto; 
+  background-color: rgb(222,222,222);
+  transition: all 0.5s;
+  text-align: left;
+  font-size: 16px;
+  padding: 15px;
+  opacity: 0.2;
+  position:absolute;top: 700px;
+}
+
+.bottomdiv:hover { 
+  background-color: rgb(222,222,222);
+  transition: 0.5s;
+  opacity: 1;
+}
+
+.input {
+  display: inline-block;
+  border: 1px solid;
+  border-radius: 99px;
+  border-color: rgba(106,215,235,0);
+  background-color: rgb(242,242,242);
+  color: rgb(64,64,64);
+  text-align: left;
+  font-size: 16px;
+  padding: 10px;
+  transition: all 0.5s;
+  margin: 20px;
+  opacity: 0.6;
+  box-shadow: 0px 0px 8px rgba(106,215,235,0);
+  border-radius: 99px;
+  width: 300px;
+}
+
+.input:hover{
+  box-shadow: 0px 0px 8px rgb(106,215,235);
+  background-color: rgb(255,255,255);
+  opacity: 1;
+  transition: 0.5s;
+  width: 400px;
+}
+
+.input:focus{
+  color: rgb(0,0,0);
+  background-color: rgb(255,255,255);
+  box-shadow: 0px 0px 8px rgb(106,215,235);
+  border-color: rgb(106,215,235);
+  transition: 0.5s;
+  opacity: 1;
+  width: 400px;
+  content:'';
+}
+
+.image {
+  box-shadow: 0px 0px 16px rgb(195,157,147);
+  border-color: rgb(106,215,235);
+  border-radius: 99px;
+  border: none;
+  text-align: center;
+  transition: all 0.5s;
+  margin: 15px;
+  width: 64px; height: 64px;
+  opacity: 1;
+  transform:rotate(0deg);
+}
+
+.image:hover{
+  opacity: 0.8;
+  transition: 0.5s;
+  transform:rotate(360deg);
+}
+
+.image:active{
+  box-shadow: 0px 0px 32px rgb(195,157,147);
+  transition: 0.5s;
+}
+
+.button {
+  display: inline-block;
+  border-radius: 40px;
+  background-color: rgb(241,77,31);
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 16px;
+  padding: 10px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 15px;
+  opacity: 1;
+  box-shadow: 0px 0px 8px rgba(106,215,235,0);
+}
+
+.button:hover{
+  opacity: 0.7;
+  border-radius: 0px;
+  transition: 0.5s;
+  background-color: rgb(106,56,251);
+  box-shadow: 0px 0px 8px rgb(106,56,251);
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '>';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+</style>
+</head>
+
+<body>
+  <div style="height: 800px">
+    <div class="centerdiv" style="position:absolute;top:130px">
+       <img class="image" style="vertical-align:middle;width:128px;height:128px;" src="icon.png">
+    </div>
+    <br>
+    <div class="centerdiv" style="position:absolute;top:300px">
+       <span class="span" style="font-size:24px;">Welcome to Dog Tools</span>
+       <br>
+       <br>
+    </div>
+    <div class="centerdiv" style="position:absolute;top:360px">
+       <form method="POST" action="Main">
+          <input name="PassInput" type="password" width="300px" align=center class="input" style="vertical-align:middle;">
+          <br>
+          <button name="PassCheck" type="submit" class="button" style="margin: 1px;padding: 10px 50px;"><span>Log in</span></button>
+       </form>
+    </div>
+
+    <div class="bottomdiv">
+       <span class="span" style="font-size:22px;">Dog Tools Controler</span>
+       <br>
+       <span class="span" style="color:rgb(120,120,120)">Version 0.0.1</span>
+       <br>
+       <span class="span" style="color:rgb(120,120,120)">Made by Error 404 / Based on Background Server (Icelolly)</span>
+    </div>
+  </div>
+</body>
+
+</html>
